@@ -7,8 +7,10 @@ MediaInfoLib wrapper for Lazarus - Free pascal
 4. Be sure that the dynamic link library of MediaInfo is in path. 
 
 > // WINDOWS -> mediainfo.dll    tested on Windows 10 Lazarus 2.0.10 fpc 3.2
+>
 > // LINUX -> libmediainfo.so.0  tested on Centos 8.1 Lazarus 2.0.10 fpc 3.2
->// MAC Darwin -> libmediainfo.0.dylib     Not tested
+>
+> // MAC Darwin -> libmediainfo.0.dylib     Not tested
 
 
 
