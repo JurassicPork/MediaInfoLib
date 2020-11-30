@@ -1,0 +1,48 @@
+object Form1: TForm1
+  Left = 512
+  Height = 756
+  Top = 203
+  Width = 1138
+  Caption = 'MediaInfo Test'
+  ClientHeight = 756
+  ClientWidth = 1138
+  DesignTimePPI = 120
+  LCLVersion = '2.0.10.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 679
+    Top = 9
+    Width = 1115
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Color = clCream
+    ScrollBars = ssAutoBoth
+    TabOrder = 0
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrCenter
+    Left = 478
+    Height = 41
+    Top = 702
+    Width = 182
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = 'MediaInfo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -23
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 1
+  end
+  object OpenDialog1: TOpenDialog
+    InitialDir = '.'
+    Left = 671
+    Top = 704
+  end
+end
