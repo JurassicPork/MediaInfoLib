@@ -15,7 +15,7 @@ unit MediaInfoDll;
 // MAC Darwin -> libmediainfo.0.dylib     Not tested
 
 interface
- uses   LCLIntf, LCLType;
+ uses   LCLIntf, LCLType, DynLibs;
 
 
 type TMIStreamKind =
