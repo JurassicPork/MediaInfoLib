@@ -34,7 +34,7 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  HandleMI: Cardinal;
+  HandleMI: PtrUint;
   {$IFDEF WINDOWS}
   To_Display: WideString;
   CR: WideString;
