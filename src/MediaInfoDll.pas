@@ -77,19 +77,6 @@ var
   MediaInfo_Option:     function  (Handle: THandle; Option: PWideChar; Value: PWideChar): PWideChar stdcall;
   MediaInfo_State_Get:  function  (Handle: THandle): Integer stdcall;
   MediaInfo_Count_Get:  function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer): Integer stdcall;
-  {$ELSE}
-  MediaInfo_New:       function  (): THandle  stdcall;
-  MediaInfo_Delete:    procedure (Handle: THandle) stdcall;
-  MediaInfo_Open:      function  (Handle: THandle; File__: PAnsiChar): Cardinal stdcall;
-  MediaInfo_Close:     procedure (Handle: THandle)  stdcall;
-  MediaInfo_Inform:    function  (Handle: THandle; Reserved: Integer): PAnsiChar  stdcall;
-  MediaInfo_GetI:      function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: Integer; KindOfInfo: TMIInfo): PAnsiChar  stdcall; //Default: KindOfInfo=Info_Text
-  MediaInfo_Get:       function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: PAnsiChar;   KindOfInfo: TMIInfo; KindOfSearch: TMIInfo): PAnsiChar  stdcall; //Default: KindOfInfo=Info_Text, KindOfSearch=Info_Name
-  MediaInfo_Option:    function  (Handle: THandle; Option: PAnsiChar; Value: PAnsiChar): PAnsiChar  stdcall;
-  MediaInfo_State_Get: function  (Handle: THandle): Integer stdcall;
-  MediaInfo_Count_Get: function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer): Integer  stdcall;
-  {$ENDIF}
-
   // Ansi methods
   MediaInfoA_New:       function  (): THandle  stdcall;
   MediaInfoA_Delete:    procedure (Handle: THandle) stdcall;
@@ -101,6 +88,31 @@ var
   MediaInfoA_Option:    function  (Handle: THandle; Option: PAnsiChar; Value: PAnsiChar): PAnsiChar  stdcall;
   MediaInfoA_State_Get: function  (Handle: THandle): Integer stdcall;
   MediaInfoA_Count_Get: function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer): Integer  stdcall;
+
+  {$ELSE}
+  MediaInfo_New:       function  (): THandle  cdecl;
+  MediaInfo_Delete:    procedure (Handle: THandle) cdecl;
+  MediaInfo_Open:      function  (Handle: THandle; File__: PAnsiChar): Cardinal cdecl;
+  MediaInfo_Close:     procedure (Handle: THandle)  cdecl;
+  MediaInfo_Inform:    function  (Handle: THandle; Reserved: Integer): PAnsiChar  cdecl;
+  MediaInfo_GetI:      function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: Integer; KindOfInfo: TMIInfo): PAnsiChar  cdecl; //Default: KindOfInfo=Info_Text
+  MediaInfo_Get:       function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: PAnsiChar;   KindOfInfo: TMIInfo; KindOfSearch: TMIInfo): PAnsiChar  cdecl; //Default: KindOfInfo=Info_Text, KindOfSearch=Info_Name
+  MediaInfo_Option:    function  (Handle: THandle; Option: PAnsiChar; Value: PAnsiChar): PAnsiChar  cdecl;
+  MediaInfo_State_Get: function  (Handle: THandle): Integer cdecl;
+  MediaInfo_Count_Get: function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer): Integer  cdecl;
+    // Ansi methods
+  MediaInfoA_New:       function  (): THandle  cdecl;
+  MediaInfoA_Delete:    procedure (Handle: THandle) cdecl;
+  MediaInfoA_Open:      function  (Handle: THandle; File__: PAnsiChar): Cardinal cdecl;
+  MediaInfoA_Close:     procedure (Handle: THandle)  cdecl;
+  MediaInfoA_Inform:    function  (Handle: THandle; Reserved: Integer): PAnsiChar  cdecl;
+  MediaInfoA_GetI:      function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: Integer; KindOfInfo: TMIInfo): PAnsiChar  cdecl; //Default: KindOfInfo=Info_Text
+  MediaInfoA_Get:       function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer; Parameter: PAnsiChar;   KindOfInfo: TMIInfo; KindOfSearch: TMIInfo): PAnsiChar  cdecl; //Default: KindOfInfo=Info_Text, KindOfSearch=Info_Name
+  MediaInfoA_Option:    function  (Handle: THandle; Option: PAnsiChar; Value: PAnsiChar): PAnsiChar  cdecl;
+  MediaInfoA_State_Get: function  (Handle: THandle): Integer cdecl;
+  MediaInfoA_Count_Get: function  (Handle: THandle; StreamKind: TMIStreamKind; StreamNumber: Integer): Integer  cdecl;
+  {$ENDIF}
+
 
 function MediaInfoDLL_Load(LibPath: string): boolean;
 
