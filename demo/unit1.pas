@@ -89,21 +89,10 @@ begin
       To_Display := To_Display + MediaInfo_Inform(HandleMI, 0);
 
       To_Display := To_Display + CR + CR + 'Custom Inform' + CR;
-      MediaInfo_Option (HandleMI, 'Inform', 'General;Example : FileSize=%FileSize%');
+      MediaInfo_Option (HandleMI, 'Inform', 'General;Example : FileSize=%FileSize% Bytes');
       To_Display := To_Display + MediaInfo_Inform(HandleMI, 0);
       MediaInfo_Option (HandleMI, 'Inform', '');
-      //To_Display := To_Display + CR + CR + 'GetI with Stream=General and Parameter:=17' + CR;
-      //To_Display := To_Display + MediaInfo_GetI(HandleMI, Stream_General, 0, 17, Info_Text);
-      //
-      //To_Display := To_Display + CR + CR + 'Count_Get with StreamKind=Stream_Audio' + CR;
-      //To_Display := To_Display + format('%d', [MediaInfo_Count_Get(HandleMI, Stream_Audio, -1)]);
-      //
-      //To_Display := To_Display + CR + CR + 'Get with Stream:=General and Parameter=^AudioCount^' + CR;
-      //To_Display := To_Display + MediaInfo_Get(HandleMI, Stream_General, 0, 'AudioCount', Info_Text, Info_Name);
-      //
-      //To_Display := To_Display + CR + CR + 'Get with Stream:=Audio and Parameter=^StreamCount^' + CR;
-      //To_Display := To_Display + MediaInfo_Get(HandleMI, Stream_Audio, 0, 'StreamCount', Info_Text, Info_Name);
-      //
+      
       To_Display := To_Display + CR + CR + 'Get with Stream:=General and Parameter=^FileSize^' + CR;
       To_Display := To_Display + MediaInfo_Get(HandleMI, Stream_General, 0, 'FileSize', Info_Text, Info_Name);
 
