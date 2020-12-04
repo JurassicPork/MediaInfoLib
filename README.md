@@ -10,10 +10,10 @@ MediaInfoLib wrapper for Lazarus - Free pascal
 >
 > // LINUX -> **libmediainfo.so.0**  tested on Centos 8.1 Lazarus 2.0.10 fpc 3.2
 >
-> // MAC Darwin -> libmediainfo.0.dylib    tested on MacOs 10.15.7 (Catalina)  Lazarus 2.0.10 fpc 3.2
-> // For MAC do not use AppleStore to get **Mediainfo** (you must pay)
-> // download the **dylib** from here : https://mediaarea.net/fr/MediaInfo/Download/Mac_OS
-> // Extract the file **libmediainfo.0.dylib** and put it for example in **$HOME/lib** (create lib if not exist) 
+> // MAC Darwin -> **libmediainfo.0.dylib**    tested on MacOs 10.15.7 (Catalina)  Lazarus 2.0.10 fpc 3.2
+1. For MAC do not use AppleStore to get **Mediainfo** (you must pay)
+2. Download the **dylib** from here : https://mediaarea.net/fr/MediaInfo/Download/Mac_OS
+3. Extract the file **libmediainfo.0.dylib** and put it for example in **$HOME/lib** (create lib if not exist) 
 
 
 
