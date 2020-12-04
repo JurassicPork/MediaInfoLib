@@ -72,6 +72,7 @@ begin
       filename := OpenDialog1.Filename;
 
       HandleMI := MediaInfo_New();
+      MediaInfo_Option(HandleMI, 'CharSet', 'UTF-8');
       To_Display := To_Display + 'Open' + CR;
       {$IFDEF WINDOWS}
       To_Display := To_Display + format('%d', [MediaInfo_Open(HandleMI, PWideChar(filename))]);
