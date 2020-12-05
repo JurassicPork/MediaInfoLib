@@ -8,11 +8,11 @@ unit MediaInfoDll;
 }
 
 // Defines how the DLL is called
-// Converted to Lazarus (only for windows) Jurassic Pork November 2020
+// Converted to Lazarus  by Jurassic Pork November 2020
 // tested with MediaInfoLib v20.09
 // WINDOWS -> mediainfo.dll    tested on Windows 10 Lazarus 2.0.10 fpc 3.2
 // LINUX -> libmediainfo.so.0  tested on Centos 8.1 Lazarus 2.0.10 fpc 3.2
-// MAC Darwin -> libmediainfo.0.dylib     Not tested
+// MAC Darwin -> libmediainfo.0.dylib  tested on MacOs 10.15.7 (Catalina)  Lazarus 2.0.10 fpc 3.2
 
 interface
  uses   LCLIntf, LCLType, DynLibs;
