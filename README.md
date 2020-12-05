@@ -1,7 +1,7 @@
 # MediaInfoLib
 MediaInfoLib wrapper for Lazarus - Free pascal
 
-1. Download the library package for your system.   https://mediaarea.net/MediaInfo/Download
+1. Download the library package for your system :   https://mediaarea.net/MediaInfo/Download
 2. Use the project which is in the demo folder to try the wrapper file  **MediaInfoDll.pas** in Lazarus
 3. The button in the demo project open an openfiledialog to choose the file to analyze.
 4. Be sure that the dynamic link library of MediaInfo is in path. 
