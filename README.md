@@ -1,7 +1,7 @@
 # MediaInfoLib
 MediaInfoLib wrapper for Lazarus - Free pascal
 
-1. Install  MediaInfo for your system.   https://mediaarea.net/fr/MediaInfo/Download
+1. Download the library package for your system.   https://mediaarea.net/MediaInfo/Download
 2. Use the project which is in the demo folder to try the wrapper file  **MediaInfoDll.pas** in Lazarus
 3. The button in the demo project open an openfiledialog to choose the file to analyze.
 4. Be sure that the dynamic link library of MediaInfo is in path. 
@@ -12,8 +12,7 @@ MediaInfoLib wrapper for Lazarus - Free pascal
 >
 > // MAC Darwin -> **libmediainfo.0.dylib**    tested on MacOs 10.15.7 (Catalina)  Lazarus 2.0.10 fpc 3.2
 
-1. For MAC download the **dylib** from here : https://mediaarea.net/fr/MediaInfo/Download/Mac_OS
-2. Extract the file **libmediainfo.0.dylib** and put it for example in **$HOME/lib** (create lib if not exist) 
+For MAC put the file **libmediainfo.0.dylib** in **$HOME/lib** (create **lib** if not exist) 
 
 
 
